@@ -4,7 +4,8 @@ import java.util.List;
 public class BankAccountApp {
     public static void main(String[] args) {
         List<Account> account = new LinkedList<>();
-//Reading data from utilities.CSV.read method
+      //Reading data from read method which in turn gets data from CSV file (CSV file consists List of Account Data 
+      //with 4 parameters Name, SSN, Account Type and Balance )
         String file = "D:\\NewBankAccounts.csv";
         List<String[]> newAccounts = utilities.CSV.read(file);
         for (String[] accounts : newAccounts) {
